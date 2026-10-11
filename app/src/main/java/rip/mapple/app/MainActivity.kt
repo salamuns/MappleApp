@@ -1,3 +1,4 @@
+//MappleApp
 package rip.mapple.app
 
 import android.annotation.SuppressLint
