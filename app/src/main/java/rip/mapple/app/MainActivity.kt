@@ -45,7 +45,8 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private val DEFAULT_SITES = listOf(
-            "https://mapple.rip" 
+            "https://mapple.rip",
+            "https://cinetaro.to"
             //,"https://mapple.fun","https://mapple.tv"
         )
         private const val OFFLINE_URL = "file:///android_asset/offline.html"
