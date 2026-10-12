@@ -45,12 +45,12 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private val DEFAULT_SITES = listOf(
+            "https://7movies.ac", 
+            "https://popcornmovies.ac", 
             "https://mapple.rip", 
             "https://cinejoy.pk", 
             "https://movy.sx", 
-            "https://popcornmovies.ac", 
             "https://pstream.cfd", 
-            "https://7movies.ac", 
             "https://shuttletv.su", 
             "https://cinetaro.to" 
             // tambah yg lain 
