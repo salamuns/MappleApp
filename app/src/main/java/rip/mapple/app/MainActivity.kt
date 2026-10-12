@@ -233,6 +233,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showPicker() {
         pickerVisible = true
+        window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         webView.stopLoading()
         webView.loadUrl("about:blank")
         swipe.visibility = View.GONE
@@ -246,6 +247,7 @@ class MainActivity : AppCompatActivity() {
         failedUrl = null
         clearHistoryOnFinish = true
         pickerVisible = false
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         picker.visibility = View.GONE
         swipe.visibility = View.VISIBLE
         webView.loadUrl(url)
@@ -457,6 +459,7 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState != null && !savedInstanceState.getBoolean("picker", true)) {
             currentUrl = savedInstanceState.getString("current") ?: currentUrl
             pickerVisible = false
+            window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
             picker.visibility = View.GONE
             swipe.visibility = View.VISIBLE
             webView.restoreState(savedInstanceState)
